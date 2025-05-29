@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-d0-list</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <div class="app-container">
+      <header class="app-header">
+        <div class="app-title">TO-DO</div>
+        <button class="add-btn" id="addTaskBtn" aria-label="Add Task">+</button>
+      </header>
+      <main>
+        <div id="tasks-list"></div>
+      </main>
+      <!-- Modal for Add/Edit Task -->
+      <div class="modal" id="taskModal">
+        <div class="modal-content">
+          <h2 id="modalTitle">Add Task</h2>
+          <input
+            type="text"
+            id="taskInput"
+            placeholder="Task title..."
+            maxlength="100"
+          />
+          <div class="modal-actions">
+            <button id="saveTaskBtn">Save</button>
+            <button id="cancelTaskBtn">Cancel</button>
+          </div>
+        </div>
+      </div>
+      <!-- Overlay for modal -->
+      <div class="modal-overlay" id="modalOverlay"></div>
+    </div>
+  </body>
+  <script src="./index.js"></script>
+</html>
